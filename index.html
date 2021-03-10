@@ -21,69 +21,114 @@
 
         <!-- MAIN -->
         <main>
+
+            <!-- UPGRADE BUTTON fixed -->
+            <div class="upgrade">
+                <button>Effettua l'upgrade</button>
+            </div>
+
+            <!-- NAV -->
             <nav>
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="img/logo.svg" alt="Logo">
-                </div>
+                <div class="nav-container">
 
-                <!-- Links -->
-                <div class="links">
-                    <ul>
-                        <li>
-                            <div class="icon-text">
-                                <img src="img/home.svg" alt="Home">
-                                <a href="#">Home</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text">
-                                <img src="img/search.svg" alt="Home">
-                                <a href="#">Cerca</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text">
-                                <img src="img/libreria.svg" alt="Home">
-                                <a href="#">La tua libreria</a>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                </div>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
 
-                <!-- Playlist container -->
-                <div class="playlist_container">
-                    <h2>Playlist</h2>
-                    <button>Crea playlist</button>
+                    <!-- Links -->
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <div class="icon-text">
+                                    <img src="img/home.svg" alt="Home">
+                                    <a href="#">Home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-text">
+                                    <img src="img/search.svg" alt="Search">
+                                    <a href="#">Cerca</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-text">
+                                    <img src="img/libreria.svg" alt="Library">
+                                    <a href="#">La tua libreria</a>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
-                </div>
+                    <!-- Playlist container -->
+                    <div class="playlist_container">
+                        <h2>Playlist</h2>
+                        <div class="icon-text">
+                            <button><i class="fas fa-plus"></i></button>
+                            <a href="#">Crea Playlist</a>
+                        </div>
+                        
 
-                <!-- Install + profile -->
-                <div class="install">
-                    <div> <i class="far fa-arrow-alt-circle-down"></i> <span>Install</span> </div>
-                    <div> <i class="far fa-user"></i> Profile </div>
+                        <ul class="playlist">
+                            <li> <a href="">Nome Playlist 1</a> </li>
+                            <li> <a href="">Nome Playlist 2</a> </li>
+                            <li> <a href="">Nome Playlist 3</a> </li>
+                            <li> <a href="">Nome Playlist 4</a> </li>
+                            <li> <a href="">Nome Playlist 5</a> </li>
+                            <li> <a href="">Nome Playlist 6</a> </li>
+                            <li> <a href="">Nome Playlist 7</a> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Install + profile -->
+                    <div class="install">
+                        <div class="icon-text">
+                            <img id="icon-download" src="img/download.svg" alt="Download app">
+                            <a href="#">Installa app</a>
+                        </div>
+                        <div class="icon-text">
+                            <img id="profile-bg" src="img/profile.svg" alt="Profile">
+                            <div id="name_profile">John Doe</div>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
             <div class="main-content">
-                position fixed button
+                main content
             </div>
         </main>
 
 
         <!-- FOOTER -->
         <footer>
-            FOOTER
+            <div class="foot-container">
+                <!-- Col 1 -->
+                <div class="track-info">
+                    <div class="img-track">
+                        <img src="img/sinister.jpeg" alt="Sinister">
+                    </div>
+                    <div class="track-author">
+                        <div id="name-author">Sinister</div>
+                        <div id="name-track">Brano nome</div>
+                    </div>
+                    <div class="xs-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="player">
+                    ciao
+                </div>
+
+                <!-- Col 3 -->
+                <div class="volume">
+                    ciao
+                </div>
+            </div>
         </footer>
     </div>
 </body>

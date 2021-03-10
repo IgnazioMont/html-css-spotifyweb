@@ -36,9 +36,11 @@ ul {
 a {
     color: #a3a3a3;
     text-decoration: none;
+    font-size: 12px;
 }
 a:hover {
     text-decoration: underline;
+    color: white;
 }
 h1, h2, h3, h4, h5, h6 {
     color: white;
@@ -52,9 +54,30 @@ h2 {
 main {
     /* Alto il 100% del wrapper meno l'altezza del footer */
     height: calc( 100% - 100px);
+}
 
-    /* test */
-    background-color: cornflowerblue;
+/* UPGRADE BUTTON */
+.upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 80px;
+    width: calc( 100% - 220px);
+    text-align: right;
+}
+.upgrade button {
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+.upgrade button:hover,
+.playlist_container button:hover {
+    cursor: pointer;
 }
 
 /* NAV section */
@@ -62,20 +85,19 @@ nav {
     width: 220px;
     background-color: black;
 }
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 .logo {
     width: 140px;
     padding-bottom: 15px;
-
-    /* test */
-    height: 70px;
 }
 
 /* Links */
 .links {
-    /* test */
-    height: 150px;
-
     padding: 20px 0;
 }
 .icon-text {
@@ -91,22 +113,62 @@ nav {
 
 /* Playlist container */
 .playlist_container {
-    min-height: 120px;
-    height: calc( 100% - 290px);
+    min-height: 160px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.playlist_container .icon-text {
+    padding-top: 10px;
+}
+.playlist_container .icon-text a {
+    font-size: 15px;
+    font-weight: 600;
+}
+.playlist_container .icon-text button {
+    padding: 10px;
+    background-color: #a3a3a3;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.playlist {
+    line-height: 1.5;
+    height: 100%;
+    overflow-y: auto;
 }
 
 /* Install + profile */
 .install {
-    /* test */
-    height: 70px;
-
-    padding: 20px 0;
+    padding-top: 20px;
 }
-
-
+#icon-download {
+    width: 15px;
+}
+.install .icon-text:first-child {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a3a3a3;
+}
+.install .icon-text:last-child {
+    padding: 15px 0 0 0;
+}
+#profile-bg {
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.install #name_profile {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Main content */
 .main-content {
+    padding-top: 120px;
     /* test */
     background-color: aquamarine;
     /* Largo il 100% del main meno la larghezza della navbar a sinistra */
@@ -117,9 +179,41 @@ nav {
 }
 
 /* FOOTER */
-footer {
+/* footer {
     height: 100px;
-
+} */
+.foot-container {
     /* test */
-    background-color: burlywood;
+    background-color: #282828;
+
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.track-info > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+.track-author {
+    margin-left: 5px;
+}
+.img-track  {
+    width: 40px;
+}
+#name-author {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+#name-track {
+    font-size: 10px;
+}
+.xs-icons {
+    margin-left: 5px;
+}
+.xs-icons i {
+    padding: 0 3px;
 }
