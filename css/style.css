@@ -26,7 +26,8 @@ nav,
     height: 100%;
     /* alte tanto quanto il main (chi le contiene) */
 }
-nav, footer {
+nav, 
+footer {
     overflow: hidden;
 }
 ul {
@@ -36,8 +37,15 @@ a {
     color: #a3a3a3;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 h1, h2, h3, h4, h5, h6 {
     color: white;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 /* MAIN */
@@ -49,34 +57,61 @@ main {
     background-color: cornflowerblue;
 }
 
+/* NAV section */
 nav {
     width: 220px;
     background-color: black;
 }
+
 .logo {
-    width: 170px;
+    width: 140px;
+    padding-bottom: 15px;
+
+    /* test */
+    height: 70px;
+}
+
+/* Links */
+.links {
+    /* test */
+    height: 150px;
+
+    padding: 20px 0;
+}
+.icon-text {
     padding-bottom: 15px;
 }
-.links {
-    line-height: 1.5;
-    padding: 20px 0;
+.icon-text a, 
+.icon-text img {
+    vertical-align: middle;
 }
-.links li .fas {
-    padding: 5px;
+.icon-text img {
+    width: 25px;
 }
+
+/* Playlist container */
+.playlist_container {
+    min-height: 120px;
+    height: calc( 100% - 290px);
+}
+
+/* Install + profile */
 .install {
+    /* test */
+    height: 70px;
+
     padding: 20px 0;
 }
 
 
 
-
+/* Main content */
 .main-content {
     /* test */
     background-color: aquamarine;
     /* Largo il 100% del main meno la larghezza della navbar a sinistra */
     width: calc( 100% - 220px );
-    
+    height: 100%;
     /* Scrollbar quando serve */
     overflow-y: auto;
 }
