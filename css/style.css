@@ -148,7 +148,7 @@ nav {
 
 /* Install + profile */
 .install {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 #icon-download {
     width: 15px;
@@ -199,6 +199,25 @@ nav {
 }
 .main-content .list-sections a {
     text-decoration: none;
+}
+
+/* Songs */
+.songs-wrapper {
+    padding: 20px 0;
+}
+.songs-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.author_name {
+    text-align: center;
+}
+.single-track {
+    width: calc(100% / 6);
+}
+.img-song img {
+    padding: 10px 5px;
 }
 
 
@@ -320,13 +339,23 @@ footer {
 }
 
 
+
 /* MEDIA QUERIES */
-/* @media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
+    .songs-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .single-track {
+        width: calc(100% / 4);
+    }
 }
 
-@media screen and (min-width: 540px) and (max-width: 768px){
+@media screen and (max-width: 768px) {
+    .single-track {
+        width: calc(100% / 2);
+    }
 }
-*/
 
 @media screen and (max-width: 520px) {
     .hidden {
@@ -340,8 +369,10 @@ footer {
         width: 60px;
     }
     .nav-container {
-        justify-content: space-between;
         text-align: center;        
+    }
+    .links {
+        flex-grow: 1;
     }
     .main-content {
         width: calc( 100% - 60px );
@@ -377,8 +408,4 @@ footer {
     .player {
         padding: 20px 0;
     }
-}
-
-@media screen and (max-width: 768px) {
-    
 }
