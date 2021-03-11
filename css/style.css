@@ -184,11 +184,11 @@ nav {
 }
 
 /* FOOTER */
-/* footer {
-    height: 100px;
-} */
-.foot-container {
+footer {
     background-color: #282828;
+    height: 100px;
+}
+.foot-container {
     padding: 5px;
     display: flex;
     justify-content: space-between;
