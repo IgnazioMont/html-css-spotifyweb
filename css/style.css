@@ -49,11 +49,14 @@ h2 {
     text-transform: uppercase;
     font-size: 18px;
 }
+.hidden {
+    display: none;
+}
 
 /* MAIN */
 main {
     /* Alto il 100% del wrapper meno l'altezza del footer */
-    height: calc( 100% - 70px);
+    height: calc( 100% - 80px);
 }
 
 /* UPGRADE BUTTON */
@@ -184,16 +187,28 @@ nav {
 }
 /* List sections */
 .main-content ul {
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.main-content .list-sections li {
+    padding: 0 10px;
+}
+.main-content .list-sections li:hover {
+    border-bottom: 2px solid #adff2f;
+}
+.main-content .list-sections a {
+    text-decoration: none;
+}
+
 
 /* FOOTER */
 footer {
     background-color: #282828;
-    height: 70px;
+    height: 80px;
 }
 .foot-container {
-    padding: 5px;
+    padding: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,6 +307,7 @@ footer {
 }
 .volume li {
     padding-left: 8px;
+    display: inline-block;
 }
 .volume li:last-child {
     padding-left: 0;
@@ -306,16 +322,63 @@ footer {
 
 /* MEDIA QUERIES */
 /* @media screen and (min-width: 768px) and (max-width: 992px) {
-    
 }
+
 @media screen and (min-width: 540px) and (max-width: 768px){
-    
+}
+*/
+
+@media screen and (max-width: 520px) {
+    .hidden {
+        display: contents;
+        flex-shrink: 1;
+    }
+    .xs-hidden {
+        display: none;
+    }
+    nav {
+        width: 60px;
+    }
+    .nav-container {
+        justify-content: space-between;
+        text-align: center;        
+    }
+    .main-content {
+        width: calc( 100% - 60px );
+    }
+    .upgrade {
+        width: calc( 100% - 60px);
+        text-align: center;
+    }
+    .icon-text #name_profile {
+        display: none;
+    }
+    #profile-bg {
+        margin: 0;
+    }
+    .icon-text img:hover {
+        cursor: pointer;
+    }
+    .install .icon-text:first-child {
+        border-bottom: none;
+    }
+
+    /* FOOTER */
+    footer {
+        overflow: auto;
+    }
+    .foot-container {
+        flex-direction: column;
+    }
+    .foot-container > div {
+        width: 100%;
+        text-align: center;
+    }
+    .player {
+        padding: 20px 0;
+    }
 }
 
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 540px){
+@media screen and (max-width: 768px) {
     
-} */
+}
