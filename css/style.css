@@ -110,6 +110,11 @@ nav {
 .icon-text img {
     width: 25px;
 }
+.links .icon-text:hover {
+    border-left: 2px solid #adff2f;
+    padding: 0;
+    margin-bottom: 15px;
+}
 
 /* Playlist container */
 .playlist_container {
@@ -183,15 +188,14 @@ nav {
     height: 100px;
 } */
 .foot-container {
-    /* test */
     background-color: #282828;
-
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    height: 100%;
     flex-wrap: wrap;
 }
+
+/* Col 1 */
 .track-info > div {
     display: inline-block;
     vertical-align: middle;
@@ -214,6 +218,99 @@ nav {
 .xs-icons {
     margin-left: 5px;
 }
-.xs-icons i {
+.xs-icons a {
     padding: 0 3px;
+    text-decoration: none;
 }
+
+/* Col 2 */
+/* Player icons */
+.player {
+    text-align: center;
+    width: 40%;
+}
+.player-icons li {
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.player-icons a {
+    color: white;
+    font-size: 12px;
+}
+.player-icons .fa-play-circle {
+    font-size: 24px;
+}
+
+/* Time bar */
+.time-bar li,
+.volume li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.time-bar .time {
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.line {
+    width: 60%;
+    height: 3px; 
+    background-color: #5a5a5a;
+    margin: 0px 7px;
+}
+.line .nested-line {
+    position: relative;
+    width: 20%;
+    height: 3px; 
+    background-color: #c1c1c1;
+}
+/* White dot */
+.nested-line i {
+    display: none;
+}
+.nested-line:hover i {
+    display: inline-block;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Volume icons */
+.volume {
+    text-align: right;
+    width: 27%;
+}
+.volume li {
+    padding-left: 8px;
+}
+.volume li:last-child {
+    padding-left: 0;
+}
+.volume .line {
+    width: 32%;
+}
+.volume .nested-line {
+    width: 25%;
+}
+
+
+/* MEDIA QUERIES */
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+@media screen and (min-width: 540px) and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 540px){
+    
+} */

@@ -41,20 +41,20 @@
                         <ul>
                             <li>
                                 <div class="icon-text">
-                                    <img src="img/home.svg" alt="Home">
-                                    <a href="#">Home</a>
+                                    <a href="#"><img src="img/home.svg" alt="Home"></a>
+                                    <a class="xs-hidden" href="#">Home</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon-text">
-                                    <img src="img/search.svg" alt="Search">
-                                    <a href="#">Cerca</a>
+                                    <a href="#"><img src="img/search.svg" alt="Search"></a>
+                                    <a class="xs-hidden" href="#">Cerca</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon-text">
-                                    <img src="img/libreria.svg" alt="Library">
-                                    <a href="#">La tua libreria</a>
+                                    <a href="#"><img src="img/libreria.svg" alt="Library"></a>
+                                    <a class="xs-hidden" href="#">La tua libreria</a>
                                 </div>
                                 
                             </li>
@@ -85,11 +85,11 @@
                     <div class="install">
                         <div class="icon-text">
                             <img id="icon-download" src="img/download.svg" alt="Download app">
-                            <a href="#">Installa app</a>
+                            <a class="xs-hidden" href="#">Installa app</a>
                         </div>
                         <div class="icon-text">
                             <img id="profile-bg" src="img/profile.svg" alt="Profile">
-                            <div id="name_profile">John Doe</div>
+                            <div id="name_profile" class="xs-hidden">John Doe</div>
                         </div>
                     </div>
                 </div>
@@ -114,19 +114,67 @@
                         <div id="name-track">Brano nome</div>
                     </div>
                     <div class="xs-icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-folder"></i>
+                        <a href="#"> <i class="far fa-heart"></i> </a>
+                        <a href="#"> <i class="far fa-folder"></i> </a>
                     </div>
                 </div>
 
                 <!-- Col 2 -->
                 <div class="player">
-                    ciao
+                    <!-- Player icons -->
+                    <div class="player-icons">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fas fa-random"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas fa-step-backward"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="far fa-play-circle"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas fa-step-forward"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas fa-redo-alt"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Time bar -->
+                    <div class="time-bar">
+                        <ul>
+                            <li class="time">0:25</li>
+                            <li class="line">
+                                <div class="nested-line">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                            </li>
+                            <li class="time">4:35</li>
+                        </ul>
+                        
+                    </div>
                 </div>
 
                 <!-- Col 3 -->
                 <div class="volume">
-                    ciao
+                    <ul>
+                        <li>
+                            <a href="#"> <i class="fas fa-list-ul"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-desktop"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-volume-up"></i> </a>
+                        </li>
+                        <li class="line">
+                            <div class="nested-line">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
