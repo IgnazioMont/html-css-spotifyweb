@@ -213,6 +213,10 @@ nav {
 .author_name {
     text-align: center;
 }
+.author_name div {
+    font-size: 10px;
+    padding-top: 5px;
+}
 .single-track {
     width: calc(100% / 6);
 }
