@@ -26,9 +26,9 @@ nav,
     height: 100%;
     /* alte tanto quanto il main (chi le contiene) */
 }
-/* nav {
-    overflow: hidden;
-} */
+nav {
+    padding-left: 0;
+}
 ul {
     list-style-type: none;
 }
@@ -51,7 +51,7 @@ h2 {
 .songs-wrapper h2 {
     text-transform: none;
     padding: 20px 0 0 5px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .hidden {
     display: none;
@@ -74,6 +74,7 @@ main {
     height: 80px;
     width: calc( 100% - 220px);
     text-align: right;
+    z-index: 1;
 }
 .upgrade button {
     color: white;
@@ -87,6 +88,15 @@ main {
 .playlist_container button:hover {
     cursor: pointer;
 }
+.upgrade button:hover {
+    transform: scale(1.1);
+    transition: transform .1s;
+}
+.player-icons .fa-play-circle:hover {
+    transform: scale(1.3);
+    transition: transform .1s;
+}
+
 
 /* NAV section */
 nav {
@@ -102,6 +112,7 @@ nav {
 .logo {
     width: 140px;
     padding-bottom: 15px;
+    padding-left: 15px;
 }
 
 /* Links */
@@ -109,7 +120,8 @@ nav {
     padding: 20px 0;
 }
 .icon-text {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
 }
 .icon-text a, 
 .icon-text img {
@@ -118,11 +130,9 @@ nav {
 .links .icon-text img {
     width: 25px;
 }
-
-.links .icon-text:hover {
-    border-left: 2px solid #adff2f;
-    padding: 0;
-    margin-bottom: 15px;
+.links .icon-text.home {
+    border-left: 3px solid lime;
+    padding-left: 10px;
 }
 
 /* Playlist container */
@@ -132,9 +142,11 @@ nav {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
 }
 .playlist_container .icon-text {
     padding-top: 10px;
+    padding-left: 0;
 }
 .playlist_container .icon-text a {
     font-size: 15px;
@@ -157,6 +169,10 @@ nav {
 /* Install + profile */
 .install {
     padding-top: 10px;
+    padding-left: 15px;
+}
+.install .icon-text {
+    padding-left: 0;
 }
 #icon-download {
     width: 15px;
@@ -176,6 +192,9 @@ nav {
     text-align: center;
     border-radius: 50%;
 }
+.icon-text .rounded {
+    padding: 3px;
+}
 .rounded img {
     border-radius: 50%;
 }
@@ -193,7 +212,9 @@ nav {
 /* Main content */
 .main-content {
     padding-top: 110px;
-    background-color: #141922;
+    /* background-color: #141922; */
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+
     /* Largo il 100% del main meno la larghezza della navbar a sinistra */
     width: calc( 100% - 220px );
     height: 100%;
@@ -324,6 +345,7 @@ footer {
 }
 #name-track {
     font-size: 10px;
+    cursor: pointer;
 }
 .xs-icons {
     margin-left: 5px;
@@ -350,9 +372,6 @@ footer {
 }
 .player-icons .fa-play-circle {
     font-size: 20px;
-}
-.player-icons .fa-play-circle:hover {
-    font-size: 23px;
 }
 
 /* Time bar */
@@ -420,6 +439,9 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
+    .xs-logo img {
+        padding-left: 15px;
+    }
     .songs-container {
         flex-wrap: wrap;
         justify-content: flex-start;
