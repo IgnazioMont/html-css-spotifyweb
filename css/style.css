@@ -118,6 +118,7 @@ nav {
 .icon-text img {
     width: 25px;
 }
+
 .links .icon-text:hover {
     border-left: 2px solid #adff2f;
     padding: 0;
@@ -167,6 +168,14 @@ nav {
 .install .icon-text:last-child {
     padding: 15px 0 0 0;
 }
+/* .rounded {
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 50%;
+} */
 #profile-bg {
     width: 20px;
     background-color: gray;
@@ -252,9 +261,11 @@ footer {
     flex-wrap: nowrap;
 }
 .track-info,
-.player, 
 .volume {
-    flex-basis: 230px;
+    flex-basis: 180px;
+}
+.player {
+    width: 45%;
 }
 
 /* Col 1 */
@@ -281,6 +292,7 @@ footer {
     margin-left: 5px;
 }
 .xs-icons a {
+    display: block;
     padding: 0 3px;
     text-decoration: none;
 }
@@ -292,15 +304,15 @@ footer {
 }
 .player-icons li {
     display: inline-block;
-    padding: 5px 10px;
-    vertical-align: middle;
+    padding: 3px 8px;
+    vertical-align: top;
 }
 .player-icons a {
     color: white;
-    font-size: 12px;
+    font-size: 10px;
 }
 .player-icons .fa-play-circle {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* Time bar */
@@ -341,6 +353,7 @@ footer {
     cursor: pointer;
 }
 
+/* Col 3 */
 /* Volume icons */
 .volume {
     text-align: right;
@@ -353,10 +366,10 @@ footer {
     padding-left: 0;
 }
 .volume .line {
-    width: 32%;
+    width: 25%;
 }
 .volume .nested-line {
-    width: 25%;
+    width: 40%;
 }
 
 
@@ -414,35 +427,18 @@ footer {
     .install .icon-text:first-child {
         border-bottom: none;
     }
-
-    /* FOOTER */
-    footer {
-        overflow: auto;
-    }
-    .foot-container {
-        flex-direction: column;
-    }
-    .foot-container > div {
-        width: 100%;
-        text-align: center;
-    }
-    .player {
-        padding: 20px 0;
-    }
 }
 
 
 /* Scrollbar style */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #141922;
+    border-radius: 10px;
 }
-  
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #adff2f;
 }
