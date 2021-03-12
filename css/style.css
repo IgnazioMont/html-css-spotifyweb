@@ -115,7 +115,7 @@ nav {
 .icon-text img {
     vertical-align: middle;
 }
-.icon-text img {
+.links .icon-text img {
     width: 25px;
 }
 
@@ -168,22 +168,23 @@ nav {
 .install .icon-text:last-child {
     padding: 15px 0 0 0;
 }
-/* .rounded {
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
-    border-radius: 50%;
-} */
-#profile-bg {
-    width: 20px;
+.rounded {
+    display: inline-block;
+    padding: 3px;
     background-color: gray;
+    width: 25px;
+    height: 25px;
+    text-align: center;
     border-radius: 50%;
-    margin-right: 5px;
+}
+.rounded img {
+    border-radius: 50%;
+}
+.rounded img:hover {
+    cursor: pointer;
 }
 .install #name_profile {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
     display: inline-block;
@@ -245,6 +246,13 @@ nav {
 }
 .img-song img {
     padding: 10px 5px;
+}
+.img-song .rounded {
+    background-color: unset;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
 }
 
 
