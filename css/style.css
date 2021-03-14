@@ -50,7 +50,7 @@ h2 {
 }
 .songs-wrapper h2 {
     text-transform: none;
-    padding: 20px 0 0 5px;
+    padding: 20px 0 0 10px;
     font-size: 30px;
 }
 .hidden {
@@ -152,13 +152,14 @@ nav {
     font-size: 15px;
     font-weight: 600;
 }
-.playlist_container .icon-text button {
+.playlist_container .icon-text .fa-plus {
     padding: 10px;
     background-color: #a3a3a3;
-    border: none;
-    width: 40px;
-    height: 40px;
     margin-right: 5px;
+    color: black;
+}
+.icon-text .fa-plus:hover {
+    color: white;
 }
 .playlist {
     line-height: 1.5;
@@ -264,7 +265,7 @@ nav {
     padding-top: 5px;
 }
 .songs-wrapper > .subtitle {
-    padding-left: 5px;
+    padding-left: 10px;
 }
 .single-track {
     width: calc(100% / 6);
